@@ -1,0 +1,54 @@
+# Site
+name: "noCodeBLX"
+title: "noCodeBLX"
+description: "No-code tool for frontend business logic"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+permalink: /:title/
+baseurl: ""
+
+# Authors
+authors:
+  gorka:
+    name: Gorka
+    display_name: Gorka
+    gravatar: d87a97caea82d71b41ef2d981458c107
+    email: gorka@aquigorka.com
+    web: https://AquiGorka.com
+    twitter: https://twitter.com/AquiGorka
+    description: "noCodeBLX CEO fixing the disconnect between PMs and Engineering"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+# Pagination 
+paginate: 6
+paginate_path: /page-:num/
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
