@@ -86,7 +86,7 @@ post_class: post-template
                     {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
                     <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/category/{{ category | replace: " ","-" }}">{{ category }}</a>
+                      <span style="background: rgba(0, 0, 0, .05); color: rgba(0, 0, 0, .6); border-radius: 3px; padding: 5px 10px;">{{ category }}</span>
                     </li>
                     {% endfor %}
                 </ul>
@@ -99,7 +99,7 @@ post_class: post-template
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                        <a class="smoothscroll" href="{{site.baseurl}}/tag/{{ tag | replace: " ","-" }}">#{{ tag }}</a>
+                        <span style="background: rgba(0, 0, 0, .05); color: rgba(0, 0, 0, .6); border-radius: 3px; padding: 5px 10px;">#{{ tag }}</span>
                     </li>
                     {% endfor %}
                 </ul>
@@ -116,7 +116,6 @@ post_class: post-template
             {% endif %}
             <div class="clearfix"></div>
             </div>
-            <!-- End Categories -->
 
         </div>
         <!-- End Post -->
